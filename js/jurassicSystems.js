@@ -87,7 +87,7 @@
             dennisMusicHTML5.append('<source src="/snd/dennisMusic.ogg">');
             dennisMusicHTML5.append('<source src="/snd/dennisMusic.mp3">');
             dennisMusicHTML5.append('<source src="/snd/dennisMusic.wav">');
-			whipHTML5.append('<source src="/sound/whipcrack.mp3">');
+			whipHTML5.append('<source src="/snd/whipcrack.mp3">');
             fourTwentyHTML5.append('<source src="/snd/420.mp3">');
 
             env.sounds.beep = {
@@ -303,11 +303,6 @@
                         clearInterval(errorSpam);
                      }
 
-                     $('#mac-hd-window').css('background-image', 'url(/img/macHDBlur.jpg)');
-                     $('#the-king-window').show();
-                     setTimeout(function() {
-                        $('#home-key').css('z-index', '64000');
-                     }, 10000);
                   }, 2000);
                });
             }, 4000);
@@ -499,17 +494,11 @@
 
    $(document).ready(function() {
       // attempt to cache objects
-      $(['theKingBlur.jpg',
-         'theKingFocus.jpg',
-         'macHDBlur.jpg',
-         'asciiNewman.jpg',
+      $(['asciiNewman.jpg',
          'waifuGirlWindow.jpg']).each(function() {
             new Image().src = '/img/' + this;
          });
 
-      $.ajax({
-         url : '/swf/theKing.swf'
-      });
 
       // remove boot screen
       setTimeout(function() {
