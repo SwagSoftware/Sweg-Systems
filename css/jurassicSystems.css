@@ -234,7 +234,6 @@ input[type="button"], button {-moz-box-sizing: content-box;}
 input[type="button"]::-moz-focus-inner, button::-moz-focus-inner { padding:0;border:0 none; }
 
 .button {
-   background-image:url("/img/buttonOverlay.png");
    -moz-border-radius:5px;
    -webkit-border-radius:5px;
    border-radius:5px;

@@ -264,7 +264,6 @@
 
             return;
          } else if (inputLine.split(' ').length > 2 && magicWord.trim() === 'please') {
-            $('#main-input').append($('<img id="asciiNewman" src="/img/asciiNewman.jpg" />'));
             $('#asciiNewman').load(function() {
                var wrap = $('.inner-wrap', env.active);
                wrap.scrollTop(wrap[0].scrollHeight);
@@ -494,8 +493,7 @@
 
    $(document).ready(function() {
       // attempt to cache objects
-      $(['asciiNewman.jpg',
-         'waifuGirlWindow.jpg']).each(function() {
+      $(['waifuGirlWindow.jpg']).each(function() {
             new Image().src = '/img/' + this;
          });
 
