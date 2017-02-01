@@ -13,6 +13,11 @@ body {
    position: relative;
 }
 
+#hang-urself {
+   postition: absolute;
+   z-index: 100;
+}
+
 #irix-boot {
    position: absolute;
    background: #6ba1d8;
@@ -40,6 +45,7 @@ body {
 
 #boot-dialogue {
    position: absolute;
+   z-index: -1;
    margin: auto;
    top: 200px;
    left: 0;
@@ -159,6 +165,25 @@ body {
    right: 20px;
    top: 40px;
    background-image: url("/img/waifuGirlWindow.jpg");
+}
+
+#quake {
+   height: 493px;
+   width: 622px;
+   position: absolute;
+   display: none;
+   right: 20px;
+   top: 40px;
+   background-image: url("/img/quake.PNG");
+}
+#quake #viewport-frame {
+   position: absolute;
+   left: 7px;
+   top: 28px;
+   height: 459px;
+   width: 610px;
+   overflow: hidden;
+   background-color: black;
 }
 
 .terminal-view {
